@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Hello!</title>
-    </head>
-    <body>
-        <!--img src="/images/IMG_5975.jpeg"/-->
+
+<head>
+    <title>Hello!</title>
+</head>
+
+<body>
+    <section>
         <h2> This is Annie's personal webpage.</h2>
-        <img
-          srcset="/images/Bridgers480w.jpeg 480w, /images/Bridgers800w.jpeg 800w"
-          sizes="(max-width: 600px) 480px, 800px"
-          src="/images/Bridgers800w.jpeg"
-          alt="Bridgers in Fall" />
-        <p>
-            Thanks for dropping by!
-        </p>
-    </body>
+        <picture>
+            <source srcset="/images/Bridgers480w.jpeg" media="(orientation: landscape)" />
+            <img src="/images/Bridgers800w.jpeg 800w" alt="" />
+        </picture>
+    </section>
+    <p>
+        Thanks for dropping by!
+    </p>
+</body>
+
 </html>
