@@ -1,21 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weddell Seal Mark Recap Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+
+<body class="seal-project-page">
+    <div class="navbar" role="navigation">
+        <!-- Home icon -->
+        <a href="index.html" class="icon fas fa-home" role="menuitem"></a>
+        <!-- Hamburger icon label -->
+        <div id="menu-toggle" class="icon fas fa-bars"></div>
+        <!-- Regular navigation links -->
+        <div class="nav-links">
+            <!-- Add a close button (X) in the upper right corner of the menu -->
+            <div id="close-button" class="close-button">X</div>
+            <a href="weddell-seal-mark-recap-project.html" role="menuitem">Android Development</a>
+        </div>
+    </div>
+
     <div class="seal-container">
         <h1>Weddell Seal Mark Recap Project Summary</h1>
-        <p>The Weddell Seal population dynamics study team needs a reliable, durable replacement
-            for the current device that they are using to collect field data during the Antarctic
-            summer season.</p>
+        <p>Designing and building an app in parallel to support Montana
+            State research in Antarctica was an opportunity I couldn't
+            pass up!</p>
 
-            For more information about the science check out the website: 
-            <a href="https://weddellsealscience.com/">Weddell Seal Science</a>
-            
+        <h2>Problem Statement</h2>
+        <p>Weddell Seal Science researchers currently conduct data entry using traditional
+            field research methods augmented with expensive, inflexible technology that is
+            not expected to be viable beyond the 2023 field season. The research project funded
+            by the National Science Foundation through 2026 needs new technology to capture data
+            and continue to augment the existing 50+ year dataset.</p>
+
+        For more information about the science check out the website:
+        <a href="https://weddellsealscience.com/">Weddell Seal Science</a>
+        <p>Five steps taken to develop a design grounded by user experience are summarized below.</p>
+    </div>
+    <div class="card-container">
+        <div id="seal-card1" class="seal-card" onclick="flipCard('project-card1')">
+            <div class="card">
+                <div class="card-front" style="background-image: url('images/empathy-map-kaitlin.png');">
+                    <h2 class="dark-h2">Empathize</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Research the Users' Needs</h2>
+                    <p>I conducted 5 discovery interviews with the lead researchers, principle investigator,
+                        a former field technician, and a customer experience consultant. These rich conversations
+                        provided critical
+                        guidance and direction.</p>
+                    <small><b>UI Design Process Outputs: </b>Empathy Maps (5) and Use Cases (3)</small>
+                    <h4>Key Findings</h4>
+                    <ul style="list-style-type:checks;">
+                        <li>Data accuracy was expressed as a top priority by all teammates</li>
+                        <li>Financial viability could be low given the resource constraints that most research teams
+                            balance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-design-card2" class="seal-card" onclick="flipCard('project-card1')">
+            <div class="card">
+                <div class="card-front" style="background-image: url('images/Persona-630w.png');">
+                    <h2 class="dark-h2">Define</h2>
+                </div>
+                <div class="card-back">
+                    <h2>State the Users' Needs & Problems</h2>
+                    <small><b>Primary Need: </b>Efficient, accurate data collection via dependable and easy to use
+                        technology in Antarcica's inclement weather</small></br></br>
+                    <small><b>Problem: </b>Aging devices are no longer reliable and are expensive to
+                        replace</small></br></br>
+                    <small><b>UI Design Process Outputs: </b>Persona and Business Model Canvas</small>
+                    <h4>Key Findings</h4>
+                    <ul style="list-style-type:checks;">
+                        <li>Financial viability for the app likely low given typical research budgets</li>
+                        <li>Immediate financial impact of new technology is meaningful: <b>85% savings per field
+                                tech</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-design-card3" class="seal-card" onclick="flipCard('project-card1')">
+            <div class="card">
+                <div class="card-front" style="background-image: url('images/mind-map-630w.png');">
+                    <h2 class="dark-h2">Ideate</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Challenge Assumptions and Create Ideas</h2>
+                    <p>How might we not only replace the current application functionality but also
+                        improve upon it by building an application that more closely
+                        matches the current data collection process?
+                    </p>
+                    <small><b>UI Design Process Outputs: </b>Mind Map</small>
+                    <h4>Key Findings</h4>
+                    <ul style="list-style-type:checks;">
+                        <li>Revisiting efficient data entry informed the prototyping stage</li>
+                        <li>Design for experts and novices with clear labeling and organization</li>
+                        <li>Help mitigate fatigue with design choices such as colors and font</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-design-card4" class="seal-card" onclick="flipCard('project-card1')">
+            <div class="card">
+                <div class="card-front" style="background-image: url('images/tag-id-field-630w.jpg');">
+                    <h2 class="dark-h2">Prototype</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Create Solutions</h2>
+                    <p>Collaboration with lead researcher through whiteboarding and sketching provided ample
+                        input to design the next generation of Weddell Seal research technology.
+                    </p>
+                    <small><b>UI Design Process Outputs: </b>Low & High Fidelity Prototypes, Documention of Application
+                        of Usability Heuristics and the UX Laws</small>
+                    <h4>Key Findings</h4>
+                    <ul style="list-style-type:checks;">
+                        <li>Helping users recognize and recover from errors is critical to ensuring data integrity</li>
+                        <li>Flexibility and efficiency guided decisions to pre-populate certain fields</li>
+                        <li>Simplification to reduce cognitive load decluttered early prototypes by adding additional
+                            screens</li>
+                        <li>Applying Fitt's Law to mitigate environmental challenges resulted in larger buttons for data
+                            entry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-design-card4" class="seal-card" onclick="flipCard('project-card1')">
+            <div class="card">
+                <div class="card-front" style="background-image: url('images/tag-id-field-630w.jpg');">
+                    <h2 class="dark-h2">Prototype</h2>
+                </div>
+                <div class="card-back">
+                    <h2>Create Solutions</h2>
+                    <p>Collaboration with lead researcher through whiteboarding and sketching provided ample
+                        input to design the next generation of Weddell Seal research technology.
+                    </p>
+                    <small><b>UI Design Process Outputs: </b>Low & High Fidelity Prototypes, Documention of Application
+                        of Usability Heuristics and the UX Laws</small>
+                    <h4>Key Findings</h4>
+                    <ul style="list-style-type:checks;">
+                        <li>Helping users recognize and recover from errors is critical to ensuring data integrity</li>
+                        <li>Flexibility and efficiency guided decisions to pre-populate certain fields</li>
+                        <li>Simplification to reduce cognitive load decluttered early prototypes by adding additional
+                            screens</li>
+                        <li>Applying Fitt's Law to mitigate environmental challenges resulted in larger buttons for data
+                            entry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="images/Proposal-Timeline-630w.png" alt="Proposal Timeline">
+        </div>
+        <div>
+            <a href="https://new.express.adobe.com/webpage/design/urn:aaid:sc:VA6C2:cdf9a7f3-3232-4b55-8a7f-5590dada323b?category=photos"
+                role="navigation">
+                More details about my UI Design process <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
     </div>
 </body>
+
 </html>

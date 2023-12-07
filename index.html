@@ -2,59 +2,76 @@
 <html lang="en">
 
 <!-- TODO, remove .html from files once loading to github -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         crossorigin="anonymous">
-    <title></title>
+    <title>Annie Sisk's Portfolio</title>
 </head>
 
 <body>
+
     <div class="navbar" role="navigation">
         <a href="index.html" role="menuitem">Home</a>
         <a href="weddell-seal-mark-recap-project.html" role="menuitem">Android Development</a>
         <a href="about.html" role="menuitem">About Me</a>
+    </div>
+
+    <div class="main-container">
+        <div class="content-container">
+            <div class="splash-container">
+                <h1>Hello, and thank you for taking time to explore my website!</h1>
+                <p>Showcasing Fall 2023 Projects</p>
+                <a href="about.html">Learn more about me</a>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div id="project-card1" class="project-card" onclick="flipCard('project-card1')">
+                <div class="card">
+                    <div class="card-front" style="background-image: url('images/pup1-2_ParkerLevinson2023.jpg');">
+                        <h2 class="dark-h2">Weddell Seal Mark Recap App</h2>
+                        <p>Photo Credit: Parker Levinson</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>UI Design and Android Development</h2>
+                        <p>For the past three months, I've been learning Android development by reading documentation
+                            online
+                            and trial and error. ...for an Android app that runs on a ruggedized
+                            tablet designed for field use in Antarctica to meet the research team's needs and reduce
+                            their
+                            operating costs. </p>
+                        <p>
+                            <a href="weddell-seal-mark-recap-project.html" role="navigation">
+                                Check out my progress <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project-card2" class="project-card" onclick="flipCard('project-card2')">
+                <div class="card">
+                    <div class="card-front" style="background-image: url('images/battleship-630w.png');">
+                        <h2 class="light-h2">Battleship and Other Exercises</h2>
+                    </div>
+                    <div class="card-back">
+                        <h2>Fall Semester Projects</h2>
+                        <ul>
+                            <li>Battleship using Python Sockets</li>
+                            <li>Language Interpreter</li>
+                            <li>SQL Implementation to Support HTML Views</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a href="https://www.linkedin.com/in/annie-sisk/" target="_blank" title="LinkedIn">
-            Annie Sisk    <i class="fab fa-linkedin"></i>
+            Annie Sisk <i class="fab fa-linkedin"></i>
         </a>
-    </div>
-
-    <div class="content-container">
-
-        <div class="splash-container">
-            <h1>Welcome!</h1>
-            <p>Showcasing MSU - Bozeman Fall 2023 UI Design Projects</p>
-            <a href="about.html">Learn more about me</a>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div id="project-card1" class="project-card" onclick="flipCard('project-card1')">
-            <div class="card">
-                <div class="card-front" style="background-image: url('images/pup1-2_ParkerLevinson2023.jpg');">
-                    <h2>Weddell Seal Mark Recap Android App</h2>
-                </div>
-                <div class="card-back">
-                    <h2>Weddell Seal Mark Recap Android App</h2>
-                    <p>Check out my progress designing and building an Android app that runs on a ruggedized
-                        tablet designed for field use and meet the team's needs here.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="project-card2" class="project-card" onclick="flipCard('project-card2')">
-            <div class="card">
-                <div class="card-front" style="background-image: url('images/032_CFOffice2021.jpeg');">
-                    <h2>Second Project Title</h2>
-                </div>
-                <div class="card-back">
-                    <h2>Second Project Title</h2>
-                    <p>Description of the second project goes here.</p>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script>
