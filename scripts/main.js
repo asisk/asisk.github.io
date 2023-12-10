@@ -27,13 +27,22 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.remove('show');
         closeButton.style.display = 'none';
     });
-
-    // Add transitionend event listener to handle transition end
-    // navLinks.addEventListener('transitionend', function () {
-    //     if (!navLinks.classList.contains('show')) {
-    //         // Remove inline styles when the menu is fully closed
-    //         navLinks.style.width = '';
-    //         navLinks.style.height = '';
-    //     }
-    // });
 });
+
+function openStage(evt, stageName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(stageName).style.display = "block";
+    evt.currentTarget.className += "active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  

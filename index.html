@@ -5,78 +5,94 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         crossorigin="anonymous">
+    <script src="scripts/main.js" defer></script>
     <title>Annie Sisk's Portfolio</title>
 </head>
 
 <body>
 
-    <div class="navbar" role="navigation">
-        <a href="index.html" role="menuitem">Home</a>
-        <a href="weddell-seal-mark-recap-project.html" role="menuitem">Android Development</a>
-        <a href="about.html" role="menuitem">About Me</a>
-    </div>
+    <div class="grid-container">
 
-    <div class="main-container">
-        <div class="content-container">
+        <div class="header">
+
+            <div class="navbar" role="navigation">
+                <!-- Home icon -->
+                <a href="index.html" id="home" class="icon fas fa-home" role="menuitem"></a>
+                <!-- Hamburger icon label -->
+                <div id="menu-toggle" class="icon fas fa-bars"></div>
+                <!-- Regular navigation links -->
+                <div class="nav-links">
+                    <!-- Add a close button (X) in the upper right corner of the menu -->
+                    <div id="close-button" class="close-button">X</div>
+                    <a href="weddell-seal-mark-recap-project.html" role="menuitem">UI Design</a>
+                    <a href="about.html" role="menuitem">About me</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content">
             <div class="splash-container">
-                <h1>Hello, and thank you for taking time to explore my website!</h1>
-                <p>Showcasing Fall 2023 Projects</p>
-                <a href="about.html">Learn more about me</a>
+                <h1>Showcasing Fall 2023 Projects</h1>
+                <!-- <p>Showcasing Fall 2023 Projects</p> -->
+                <a href="about.html">Learn more about me here</a>
             </div>
-        </div>
 
-        <div class="card-container">
-            <div id="project-card1" class="project-card" onclick="flipCard('project-card1')">
-                <div class="card">
-                    <div class="card-front" style="background-image: url('images/pup1-2_ParkerLevinson2023.jpg');">
-                        <h2 class="dark-h2">Weddell Seal Mark Recap App</h2>
-                        <p>Photo Credit: Parker Levinson</p>
-                    </div>
-                    <div class="card-back">
-                        <h2>UI Design and Android Development</h2>
-                        <p>For the past three months, I've been learning Android development by reading documentation
-                            online
-                            and trial and error. ...for an Android app that runs on a ruggedized
-                            tablet designed for field use in Antarctica to meet the research team's needs and reduce
-                            their
-                            operating costs. </p>
-                        <p>
-                            <a href="weddell-seal-mark-recap-project.html" role="navigation">
-                                Check out my progress here<i class="fas fa-chevron-right"></i>
-                            </a>
-                        </p>
+            <div class="card-container">
+
+                <div id="project-card1" class="project-card" onclick="flipCard('project-card1')">
+                    <div class="card">
+                        <div class="card-front" style="background-image: url('images/pup1-2_ParkerLevinson2023.jpg');">
+                            <h2 class="dark-h2">Weddell Seal Mark Recap App</h2>
+                            <p>Photo Credit: Parker Levinson</p>
+                        </div>
+                        <div class="card-back">
+                            <h2>UI Design and Android Development</h2>
+                            <p>For the past three months, I've been learning Android development by reading
+                                documentation
+                                online
+                                and trial and error. ...for an Android app that runs on a ruggedized
+                                tablet designed for field use in Antarctica to meet the research team's needs and reduce
+                                their
+                                operating costs. </p>
+                            <p>
+                                <a href="weddell-seal-mark-recap-project.html" role="navigation">
+                                    Check out my progress here<i class="fas fa-chevron-right"></i>
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="project-card2" class="project-card" onclick="flipCard('project-card2')">
-                <div class="card">
-                    <div class="card-front" style="background-image: url('images/battleship-630w.png');">
-                        <h2 class="light-h2">Other Projects</h2>
-                    </div>
-                    <div class="card-back">
-                        <h2>When I'm not studying...</h2>
-                        <p>I'm a volunteer board member and WordPress Admin for the Gallatin Valley Bicycle Club. 
-                            My primary role is to maintain the website and advise on technology solutions to support fundraising and member management.</p>
+                <div id="project-card2" class="project-card" onclick="flipCard('project-card2')">
+                    <div class="card">
+                        <div class="card-front" style="background-image: url('images/battleship-630w.png');">
+                            <h2 class="light-h2">Other Projects</h2>
+                        </div>
+                        <div class="card-back">
+                            <h2>When I'm not studying...</h2>
+                            <p>I'm a volunteer board member and WordPress Admin for the Gallatin Valley Bicycle Club.
+                                My primary role is to maintain the website and advise on technology solutions to support
+                                fundraising and member management.</p>
                             <a href="https://gallatinvalleybicycleclub.org/">GVBC</a>
-                        <h2>Montana State University - Fall Semester Projects</h2>
-                        <ul>
-                            <li>Battleship using Python Sockets</li>
-                            <li>Language Interpreter Built with Haskell</li>
-                            <li>SQL Implementation to Support HTML Views</li>
-                            <li>Bite-sized Web Development Projects with HTML, CSS, Javascript, PHP, LAMP, React with Next.js toolchain, and Ruby on Rails</li>
-                        </ul>
+                            <h2>Montana State University - Fall Semester Projects</h2>
+                            <ul>
+                                <li>Battleship using Python Sockets</li>
+                                <li>Language Interpreter Built with Haskell</li>
+                                <li>SQL Implementation to Support HTML Views</li>
+                                <li>Bite-sized Web Development Projects with HTML, CSS, Javascript, PHP, LAMP, React
+                                    with
+                                    Next.js toolchain, and Ruby on Rails</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="https://www.linkedin.com/in/annie-sisk/" target="_blank" title="LinkedIn">
-            Annie Sisk <i class="fab fa-linkedin"></i>
-        </a>
     </div>
 
     <script>
