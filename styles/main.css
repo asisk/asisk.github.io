@@ -152,7 +152,7 @@ body.seal-project-page {
 .splash-container {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
     padding: 40px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -182,8 +182,10 @@ img {
     /* overflow: hidden; */
     /* border: 1px solid #ccc; */
     padding-left: 10px;
-    padding-top: 40px;
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Background color with transparency */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the buttons that are used to open the tab content */
