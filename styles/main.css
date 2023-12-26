@@ -355,11 +355,11 @@ img {
 }
 
 ul {
-    list-style: checks;
+    list-style-type: checks;
   }
 
 .card-back ul {
-    list-style: checks;
+    list-style-type: checks;
 }
 
 .card-back li {
