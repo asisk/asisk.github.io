@@ -352,6 +352,10 @@ img {
     suffix: " ";
 }
 
+ul {
+    list-style: checks;
+  }
+
 .card-back ul {
     list-style: checks;
 }
