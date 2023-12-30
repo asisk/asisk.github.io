@@ -11,9 +11,13 @@ body {
 }
 
 /* Body styles (overrides the default background image) */
-body.about-page,
-body.seal-project-page {
+body.about-page {
     background-image: none;
+    background-color: #f0f0f0;
+}
+
+body.seal-project-page {
+    background-image: url('../images/Nate-Jourdonnais-field-testing-app-630w.png');
     background-color: #f0f0f0;
 }
 
@@ -152,7 +156,7 @@ body.seal-project-page {
     margin: 0 auto;
     text-align: center;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
     /* Background color with transparency */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -198,18 +202,20 @@ img {
     cursor: pointer;
     transition: 0.3s;
     flex-direction: row;
+    border-radius: 8px;
+    padding: 5px;
     /* Display items horizontally */
     justify-content: space-between;
    }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+.tablinks:hover {
+    background-color: rgba(34, 123, 186, 0.5);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: rgba(34, 123, 186, 0.7);
 }
 
 .tab a {
@@ -217,12 +223,31 @@ img {
 }
 
 .tabcontent {
-    display: flex;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 20px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 /* END Side bar tabs */
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+.usability-testing-vid, .stage-image {
+    display: block;
+    margin: 0 auto;
+  }
 
 /* Project card - Weddell Seal Mark Recap App*/
 
