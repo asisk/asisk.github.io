@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weddell Seal Mark Recap Project</title>
+    <title>Weddell Seal App | Annie Sisk</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         crossorigin="anonymous">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/tab.js" defer></script>
-
 </head>
 
 <body class="seal-project-page">
@@ -18,161 +17,174 @@
     <div class="grid-container">
 
         <div class="header">
-
             <div class="navbar" role="navigation">
-                <!-- Home icon -->
-                <a href="index" id="home" class="icon fas fa-home" role="menuitem"></a>
-                <!-- Hamburger icon label -->
-                <div id="menu-toggle" class="icon fas fa-bars"></div>
-                <!-- Regular navigation links -->
+                <a href="index" id="home" class="icon fas fa-home" role="menuitem" aria-label="Home"></a>
+                <div id="menu-toggle" class="icon fas fa-bars" aria-label="Open menu"></div>
                 <div class="nav-links">
-                    <!-- Add a close button (X) in the upper right corner of the menu -->
                     <div id="close-button" class="close-button">X</div>
+                    <a href="weddell-seal-mark-recap-project" role="menuitem">Weddell Seal App</a>
                     <a href="about" role="menuitem">About me</a>
                 </div>
             </div>
-
         </div>
 
         <div class="content">
             <div class="splash-container">
-                <h1>Weddell Seal Mark Recap UI Design Summary</h1>
-                <p>Designing and building an app in parallel to support Montana
-                    State research in Antarctica was an opportunity I couldn't
-                    pass up!</p>
-
-                <h2>Problem Statement</h2>
-                <p>Weddell Seal Science researchers currently conduct data entry using traditional
-                    field research methods augmented with expensive, inflexible technology that is
-                    not expected to be viable beyond the 2023 field season. The research project funded
-                    by the National Science Foundation through 2026 needs new technology to capture data
-                    and continue to augment the existing 50+ year dataset.</p>
-
-                For more information about the science check out the team's website:
-                <a href="https://weddellsealscience.com/">Weddell Seal Science</a>
-                <p>Five UI Design stages, summarized below, guided development of the app</p>
-                <a href="https://new.express.adobe.com/webpage/design/urn:aaid:sc:VA6C2:cdf9a7f3-3232-4b55-8a7f-5590dada323b?category=photos"
-                    role="navigation">
-                    Full UI Design process<i class="fas fa-chevron-right"></i>
-                </a>
+                <h1>Weddell Seal App</h1>
+                <p class="project-subtitle">Building a next-generation research app for Antarctic field work</p>
+                <p>The Weddell Seal population dynamics team needed a reliable, durable replacement for the device used
+                    to collect mark-recapture data during the Antarctic summer season. This project delivers an Android
+                    app for a ruggedized field tablet—designed with researchers and technicians, then tested where the
+                    work happens.</p>
+                <p>UX discovery and Android development ran in parallel. An alpha build was deployed and field-tested in
+                    Antarctica while the design stages below refined the experience.</p>
+                <p class="project-links">
+                    Science context:
+                    <a href="https://weddellsealscience.com/" target="_blank" rel="noopener noreferrer">Weddell Seal Science</a>
+                    ·
+                    <a href="https://www.montana.edu/weddellseals/" target="_blank" rel="noopener noreferrer">MSU research overview</a>
+                </p>
+                <p class="project-links">
+                    <a href="https://new.express.adobe.com/webpage/3eCKIqwYsoV5p" target="_blank" rel="noopener noreferrer">
+                        Visual project story (Adobe Express)<i class="fas fa-chevron-right"></i>
+                    </a>
+                </p>
+                <p class="photo-credit">Background photo: Nate Jourdonnais in the field; photo by Parker Levinson, 11/2023</p>
             </div>
+
             <div class="tab">
-                <h2>UI Design Stages</h2>
+                <h2>UX Discovery Stages</h2>
                 <button class="tablinks" onclick="openStage(event, 'stage-one')" id="defaultOpen">Stage 1</button>
                 <button class="tablinks" onclick="openStage(event, 'stage-two')">Stage 2</button>
                 <button class="tablinks" onclick="openStage(event, 'stage-three')">Stage 3</button>
                 <button class="tablinks" onclick="openStage(event, 'stage-four')">Stage 4</button>
                 <button class="tablinks" onclick="openStage(event, 'stage-five')">Stage 5</button>
+                <button class="tablinks" onclick="openStage(event, 'stage-six')">Stage 6</button>
             </div>
-            </br>
+
             <div id="stage-one" class="tabcontent">
-                <h3>Stage 1 - Empathize</h3>
-                <h2>Research the Users' Needs</h2>
-                <p>I conducted 5 discovery interviews with the lead researchers, principle investigator,
-                    a former field technician, and a customer experience consultant. These rich conversations
-                    provided critical
-                    guidance and direction.</p>
-                <p><b>UI Design Process Outputs: </b>Empathy Maps (5) and Use Cases (3)</p>
-                <h4>Key Findings</h4>
+                <h3>Stage 1 — Empathize</h3>
+                <h2>Research the users' needs</h2>
+                <p>Five discovery interviews with lead researchers, the principal investigator, a former field
+                    technician, and a customer experience consultant set direction for the product.</p>
+                <p><strong>Process outputs:</strong> Empathy maps (5) and use cases (3)</p>
+                <h4>Key conclusions</h4>
                 <ul>
-                    <li>Data accuracy was expressed as a top priority by all interviewees</li>
-                    <li>Three Use Cases were identified during this stage, with priority being the Data Entry use case
-                    </li>
+                    <li>A next-generation Android tablet app can help field technicians gather data efficiently in
+                        Antarctica.</li>
+                    <li>Intuitive, low-friction views can reduce fatigue while protecting data accuracy.</li>
+                    <li>There was a clear near-term need: researchers wanted new technology ready for the upcoming field
+                        season.</li>
                 </ul>
-                <img class="stage-image" src="images/empathy-map-kaitlin.png" alt="Empathy Map">
+                <img class="stage-image" src="images/empathy-map-kaitlin.png" alt="Example empathy map from discovery interviews">
+                <p class="photo-credit">Photo credit (stage imagery on Adobe story): Jesse DeVoe</p>
             </div>
 
             <div id="stage-two" class="tabcontent">
-                <h3>Stage 2 - Define</h3>
-                <h2>State the Users' Needs & Problems</h2>
-                <p>Development of app features is focused on gathering demographic data on the Antarctic seal colonies.
-                </p>
-                <p><b>Primary Need: </b>Efficient, accurate data collection via dependable and easy to use
-                    technology in Antarctica's inclement weather</p>
-                <p><b>Problem: </b>Aging devices are no longer reliable and are expensive to
-                    replace</p> </br>
-                <p><b>UI Design Process Outputs: </b>Persona and Business Model Canvas</p>
-                <h4>Key Findings</h4>
+                <h3>Stage 2 — Define</h3>
+                <h2>State the users' needs and problems</h2>
+                <p>Feature work centers on collecting demographic observations for Antarctic Weddell seal colonies.</p>
+                <p><strong>Primary need:</strong> Efficient, accurate data collection on dependable, easy-to-use
+                    technology in harsh field conditions.</p>
+                <p><strong>Problem:</strong> Aging devices were no longer reliable and were expensive to replace—risking
+                    continuity of a 50+ year dataset supported by NSF funding through the mid-2020s.</p>
+                <p><strong>Process outputs:</strong> Persona and business model canvas</p>
+                <h4>Key conclusions</h4>
                 <ul>
-                    <li>Financial viability for the app likely low given typical research budgets</li>
-                    <li>Impact on project budget of new technology is meaningful: <b>estimated 85% savings per field
-                            tech</b>
-                    </li>
+                    <li>Data accuracy was a top priority across all interviewees.</li>
+                    <li>Dependability and ease of use surfaced repeatedly in empathy mapping.</li>
+                    <li>A lightly configurable product could serve research teams beyond the first audience.</li>
+                    <li>Commercial financial viability may be limited given typical research budgets—yet estimated
+                        technology cost savings for this team were substantial (~85% per field tech).</li>
                 </ul>
-                <img class="stage-image" src="images/Persona-630w.png" alt="Persona">
+                <img class="stage-image" src="images/Persona-630w.png" alt="Primary persona for the Weddell Seal App">
+                <p class="photo-credit">Photo credit (stage imagery on Adobe story): Jay Rotella, Quantarctica</p>
             </div>
 
             <div id="stage-three" class="tabcontent">
-                <h3>Stage 3 - Ideate</h3>
-                <h2>Challenge Assumptions and Create Ideas</h2>
-                <p>How might we not only replace the current application functionality but also
-                    improve upon it by building an application that more closely
-                    matches the current data collection process?
-                </p>
-                <p><b>UI Design Process Outputs: </b>Mind Map</p>
-                <h4>Key Findings</h4>
+                <h3>Stage 3 — Ideate</h3>
+                <h2>Challenge assumptions and create ideas</h2>
+                <p>How might we replace the current application—and improve it—so the software more closely matches how
+                    the team actually collects data in the field?</p>
+                <p><strong>Process outputs:</strong> Mind map</p>
+                <h4>Key conclusions</h4>
                 <ul>
-                    <li>Design for experts and novices with clear labeling and organization</li>
-                    <li>Help mitigate fatigue with design choices such as colors and font</li>
+                    <li>Design for both experts and novices with clear labeling and organization.</li>
+                    <li>Use color, type, and flow choices that help mitigate fatigue during long field days.</li>
                 </ul>
-                <img class="stage-image" src="images/mind-map-630w.png" alt="Mind Map">
+                <img class="stage-image" src="images/mind-map-630w.png" alt="Mind map excerpt from ideation">
+                <p class="photo-credit">Photo credit (related Adobe stage imagery): Parker Levinson</p>
             </div>
 
             <div id="stage-four" class="tabcontent">
-                <h3>Stage 4 - Prototype</h3>
-                <h2>Create Solutions</h2>
-                <p>Collaboration with lead researcher through whiteboarding and sketching provided ample
-                    input to design the next generation of Weddell Seal research technology.
-                </p>
-                <p><b>UI Design Process Outputs: </b>Low & High Fidelity Prototypes, Documention of
-                    Application
-                    of Usability Heuristics and the UX Laws</p>
-                <h4>Key Findings</h4>
+                <h3>Stage 4 — Prototype</h3>
+                <h2>Create solutions</h2>
+                <p>Whiteboarding and sketching with the lead researcher shaped low- and high-fidelity prototypes for the
+                    next generation of Weddell Seal research tooling. Usability heuristics and UX laws guided decisions
+                    as the Android UI took shape.</p>
+                <p><strong>Process outputs:</strong> Low- and high-fidelity prototypes; documentation of usability
+                    heuristics and UX laws</p>
+                <h4>Key conclusions</h4>
                 <ul>
-                    <li>Helping users recognize and recover from errors is critical to ensuring data integrity
-                    </li>
-                    <li>Flexibility and efficiency guided decisions to pre-populate certain fields</li>
-                    <li>Additional screens were added to reduce cognitive load and decluttered early prototypes</li>
-                    <li>Applying Fitt's Law to mitigate environmental challenges resulted in larger buttons for
-                        data
-                        entry</li>
+                    <li>Error recognition and recovery are essential to data integrity.</li>
+                    <li>Pre-populated fields support flexibility and efficiency under time pressure.</li>
+                    <li>Additional screens reduced cognitive load versus early, denser layouts.</li>
+                    <li>Larger tap targets (Fitts's Law) help in cold, gloved, windy conditions.</li>
                 </ul>
-                <img class="stage-image" src="images/tag-id-field-630w.jpg" alt="Tag ID Sketch">
+                <img class="stage-image" src="images/tag-id-field-630w.jpg" alt="Tag ID field sketch from prototyping">
+                <img class="stage-image" src="images/observation-screen-640w.jpg" alt="Observation screen from the app in development">
+                <p class="photo-credit">Photo credit (related Adobe stage imagery): Parker Levinson</p>
             </div>
 
             <div id="stage-five" class="tabcontent">
-                <h3>Stage 5 - Test</h3>
-                <h2>Try Out Your Solutions</h2>
-                <p>Field testing began in mid-October and with each alpha version (typically every two weeks).</p>
-                <p>Formal evaluation of the design was conducted at the end of November remotely from
-                    Antarctica and in-person in Bozeman.
+                <h3>Stage 5 — Test</h3>
+                <h2>Try out solutions in the field</h2>
+                <p>Field testing began in mid-October with alpha releases roughly every two weeks. Formal evaluation at
+                    the end of November combined remote sessions with the Antarctic team and in-person work in Bozeman.
                 </p>
-                <b>Features Tested: </b>
+                <p><strong>Features tested:</strong></p>
                 <ul>
-                    <li>Entering metadata on the Home Screen</li>
+                    <li>Entering metadata on the home screen</li>
                     <li>Navigating between screens</li>
-                    <li>Entering an observation</li>
-                    <li>Saving the observation</li>
+                    <li>Entering and saving an observation</li>
                     <li>Exporting observations</li>
-
                 </ul>
-                <p><b>UI Design Process Outputs: </b>Testing Methodology,
-                    Quantitative Results from System Usabiity Scale survey,
-                    Statistical findings with Python using pandas and matplotlib</b></p>
-                <h4>Key Findings</h4>
+                <p><strong>Process outputs:</strong> Testing methodology, System Usability Scale (SUS) results, and
+                    statistical summaries (Python with pandas and matplotlib)</p>
+                <h4>Key conclusions</h4>
                 <ul>
-                    <li>App achieved a <b>SUS score of 89</b>, well above the standard average score of 68</li>
-                    <li>Direct feedback from the team in Antarctica was overwhelmingly positive</li>
-                    <li>Several users requested options to customize the user experience, and provided actionable
-                        suggestions to improve the app</li>
+                    <li>The app achieved a <strong>SUS score of 89</strong> (average benchmark: 68).</li>
+                    <li>Direct feedback from Antarctica was strongly positive.</li>
+                    <li>Users asked for sensible customization options and offered concrete improvement ideas.</li>
                 </ul>
-                <video class="usability-testing-vid" width="300" controls autoplay loop muted>
-                    <source src="videos/usabilityTestingNov23.mp4" type="video/mp4" si>
+                <video class="usability-testing-vid" width="300" controls loop muted playsinline>
+                    <source src="videos/usabilityTestingNov23.mp4" type="video/mp4">
                 </video>
+                <p class="photo-credit">Photo credit: Nate Jourdonnais; photo by Parker Levinson, 11/2023</p>
+            </div>
+
+            <div id="stage-six" class="tabcontent">
+                <h3>Stage 6 — Summarize</h3>
+                <h2>UI design summary and next steps</h2>
+                <p>Stage 6 pulled the discovery work into a concise design summary: what the team learned, how the alpha
+                    performed in Antarctica, and where the product should go next. Presentation materials lived in
+                    shared working boards; the durable public narrative is captured on the Adobe Express project story
+                    linked above.</p>
+                <h4>Takeaways</h4>
+                <ul>
+                    <li>Parallel UX and Android development made it possible to put an alpha in researchers' hands during
+                        the field season.</li>
+                    <li>Accuracy, dependability, and fatigue-aware interaction design remain the north stars.</li>
+                    <li>A configurable mark-recapture pattern may transfer to other field science teams—even when a
+                        broad commercial market is unlikely.</li>
+                </ul>
+                <img class="stage-image" src="images/Proposal-Timeline-630w.png" alt="Project proposal timeline overview">
+                <p class="photo-credit">Photo credit (stage imagery on Adobe story): William Link</p>
             </div>
         </div>
+
         <div class="footer">
-            <p>Photo Credit: Parker Levinson</p>
+            <p>Photo credits: Parker Levinson; Nate Jourdonnais (subject); Jesse DeVoe; Jay Rotella / Quantarctica; William Link — as noted per stage. Science program: Montana State University Weddell seal research.</p>
         </div>
 
     </div>

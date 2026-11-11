@@ -180,6 +180,9 @@ img {
 
 .tab {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem;
     /* overflow: hidden; */
     border: 1px solid #ccc;
     padding-left: 10px;
@@ -188,6 +191,11 @@ img {
     /* Background color with transparency */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab h2 {
+    width: 100%;
+    margin: 0.5rem 0;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -248,6 +256,30 @@ img {
     display: block;
     margin: 0 auto;
   }
+
+.stage-image + .stage-image {
+    margin-top: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+.project-links a {
+    display: inline;
+    font-weight: bold;
+}
+
+.photo-credit {
+    font-size: 0.85rem;
+    color: #444;
+    margin-top: 0.75rem;
+}
+
+.splash-container .photo-credit {
+    margin-bottom: 0;
+}
 
 /* Project card - Weddell Seal Mark Recap App*/
 
